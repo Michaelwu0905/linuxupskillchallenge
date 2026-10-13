@@ -1,9 +1,11 @@
 # .gitignore
 
 /html/
+/site_zh/
 
 # python
 .env/
 
 # nodejs
 node_modules/
+.obsidian/

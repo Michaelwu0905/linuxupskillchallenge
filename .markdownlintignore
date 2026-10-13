@@ -3,4 +3,5 @@
 # TODO: Lint these files
 .github/
 docs/
+docs_zh/
 README.md

@@ -1,0 +1,156 @@
+# Project information
+site_name: Linux Upskill Challenge（中文版）
+site_url: https://linuxupskillchallenge.org/
+site_author: Livia Lima
+site_description: >-
+  一门为期一个月的课程，面向希望在行业中从事 Linux 相关工作的学习者 —— 初级 Linux 系统管理员、DevOps 相关工作等。
+  学习从命令行管理远程 Linux 服务器所需的技能。（本文件用于构建中文版站点，内容位于 docs_zh/）
+
+# Repository
+repo_name: livialima/linuxupskillchallenge
+repo_url: https://github.com/livialima/linuxupskillchallenge
+edit_uri: blob/master/docs_zh
+
+# Copyright
+copyright: Copyright &copy; 2012-2019 Steve Brorens (@snori74) <br> Open Source since 2020 under the terms of the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+# Where the translated content lives
+docs_dir: docs_zh
+site_dir: site_zh
+
+# Extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - codehilite
+  - def_list
+  - footnotes
+  - md_in_html
+  - sane_lists
+  - smarty
+  - toc:
+      toc_depth: 4
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb
+        name: 切换到深色模式
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb-outline
+        name: 切换到浅色模式
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  favicon: luc.png
+  logo: luc.png
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+# Customization
+extra:
+  annotate:
+    json: [.s2]
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/linux-upskill-challenge-682046666928685068
+      name: discord 聊天
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@livia2lima/search?query=linux%20upskill%20challenge
+      name: 配套视频
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/livialima/
+      name: livialima @linkedin
+    - icon: fontawesome/brands/github
+      link: https://github.com/livialima
+      name: livialima @github
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@livialima
+      name: livialima @fosstodon
+
+# Page tree
+nav:
+  - 首页:
+    - index.md
+    - 从这里开始:
+      - 运作方式与常见问题: how-this-works.md
+      - 获取你自己的服务器: 00.md
+    - 课程:
+      - 第 1 天 - 了解你的服务器: 01.md
+      - 第 2 天 - 基础导航: 02.md
+      - 第 3 天 - 权力之旅！: 03.md
+      - 第 4 天 - 安装软件、探索文件结构: 04.md
+      - 第 5 天 - More or less……: 05.md
+      - 第 6 天 - 用 “vim” 编辑: 06.md
+      - 第 7 天 - 服务器及其服务: 07.md
+      - 第 8 天 - 大名鼎鼎的 “grep” 与其他文本处理器: 08.md
+      - 第 9 天 - 深入网络: 09.md
+      - 第 10 天 - 任务调度: 10.md
+      - 第 11 天 - 查找东西……: 11.md
+      - 第 12 天 - 传输文件: 12.md
+      - 第 13 天 - 用户与组: 13.md
+      - 第 14 天 - 谁有权限？: 14.md
+      - 第 15 天 - 深入软件仓库……: 15.md
+      - 第 16 天 - 归档与压缩: 16.md
+      - 第 17 天 - 从源码构建: 17.md
+      - 第 18 天 - 日志、监控与故障排查: 18.md
+      - 第 19 天 - Inode、符号链接与其他快捷方式: 19.md
+      - 第 20 天 - 脚本编程: 20.md
+    - 接下来做什么？:
+      - 第 21 天 - 接下来做什么？: 21.md
+    - 关于:
+      - 中文版说明（README）: README.md

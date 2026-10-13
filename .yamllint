@@ -9,3 +9,4 @@ ignore:
   # TODO: Lint these files
   - .github/
   - mkdocs.yml
+  - mkdocs_zh.yml
